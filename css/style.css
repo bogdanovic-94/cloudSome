@@ -49,3 +49,43 @@ p {
 
     h3 { font-size: 2.5rem;}
 }
+
+
+/* link styles */
+
+a {
+    text-decoration: none;
+}
+
+.link {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--accent-color);
+}
+
+/* arrow added */
+.link::after {
+    content:"-->";
+    margin-left: 5px;
+    transition: margin .15s;
+    -webkit-transition: margin .15s;
+    -moz-transition: margin .15s;
+    -ms-transition: margin .15s;
+    -o-transition: margin .15s;
+}
+
+.link:hover {
+    color: rgb(201, 63, 132);
+}
+
+/* desktop version link */
+@media screen and (min-width: 1024px) {
+    .link {
+        font-size: 1.5rem;
+    }
+}
+
+.link:hover::after{
+    margin-left: 10px;
+}
