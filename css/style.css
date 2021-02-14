@@ -216,6 +216,11 @@ a {
     -moz-transition:background-color ease-in .2s;
     -ms-transition:background-color ease-in .2s;
     -o-transition:background-color ease-in .2s;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
 }
 
 
@@ -275,3 +280,76 @@ btn--full {
         font-size: 1.4rem;
     }
 }
+
+/* end btn */
+
+
+/* input component */
+
+.input {
+    padding: 1.5rem 2.5rem;
+    outline: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border: 1px solid slategray;
+    color: var(--heading-color);
+    caret-color: #16213e;
+}
+
+::placeholder {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #c4c4c4;
+}
+
+@media screen and (min-width:1024px) {
+    .input {
+        font-size:1.5rem;
+    }
+}
+
+.input-group {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    display: flex;
+}
+
+.input-group .input {
+    border: 0;
+    flex-grow: 1;
+    padding: 2rem 1rem;
+}
+
+.input-group .btn {
+    margin: 5px;
+}
+
+/* card */
+
+/* Cards */
+.card {
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px #f3f3f3;
+    overflow: hidden;
+  }
+  
+  .card__header,
+  .card__body {
+    padding: 2rem 3rem;
+  }
+  
+  .card--primary .card__header {
+    background: var(--primary-color);
+    color:cornsilk;
+  }
+  
+  .card--secondary .card__header {
+    background: var(--secondary-color);
+    color:cornsilk;
+  }
+
+  /* end card */
+  
