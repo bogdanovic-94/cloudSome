@@ -132,3 +132,36 @@ a {
         font-size: 1.2rem;
     }
 }
+/* end  badge */
+
+
+/* lists */ 
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    color: var(--heading-color);
+}
+
+.inline--list .list__item {
+ display: inline-block;
+ margin-right: 2rem;
+}
+
+.tick--list {
+    list-style-image: url(../imgs/check.svg);
+    padding-left: 2.5em;
+}
+
+.tick--list .list__item {
+    padding-left: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+/* desktop list */
+
+@media screen and (min-width:1024px) {
+    .tick--list .list__item {
+        padding-left: 0;
+    }
+}
