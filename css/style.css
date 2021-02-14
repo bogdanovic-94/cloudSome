@@ -66,13 +66,13 @@ a {
 
 /* arrow added */
 .link::after {
-    content:"-->";
-    margin-left: 5px;
     transition: margin .15s;
+    margin-left: 5px;
+    content:"-->";
     -webkit-transition: margin .15s;
-    -moz-transition: margin .15s;
-    -ms-transition: margin .15s;
     -o-transition: margin .15s;
+    -ms-transition: margin .15s;
+    -moz-transition: margin .15s;
 }
 
 .link:hover {
@@ -88,4 +88,47 @@ a {
 
 .link:hover::after{
     margin-left: 10px;
+}
+
+/* end links */
+
+/* badges  */
+
+.badge {
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
+}
+
+.badge--primary {
+    background-color:var(--primary-color);
+    color: cornsilk;
+}
+
+.badge--secondary {
+    background-color:var(--secondary-color);
+    color: cornsilk;
+}
+
+
+.badge--smallone {
+    font-style: 1.5rem;
+}
+
+/* badge desktop */ 
+
+@media screen and (min-width:1024px){
+    .badge {
+        font-size: 1.5rem;
+    }
+
+    .badge--smallone {
+        font-size: 1.2rem;
+    }
 }
