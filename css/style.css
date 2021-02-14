@@ -165,3 +165,30 @@ a {
         padding-left: 0;
     }
 }
+
+
+/* icons */
+
+.icon {
+    width: 32px;
+    height: 32px;
+}
+
+.icon--primary {
+    fill: var(--primary-color);
+}
+
+.icon-container {
+    background-color:#e2eafc;
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
