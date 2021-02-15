@@ -117,7 +117,7 @@ a {
 }
 
 .badge--secondary {
-    background-color:var(--secondary-color);
+    background-color:var(--primary-color);
     color: cornsilk;
 }
 
@@ -357,7 +357,7 @@ btn--full {
   /* plans style */
 
   .plan__name {
-    color: #fff;
+    color:cornsilk;
     margin: 0;
     font-weight: 500;
     font-size: 2.4rem;
@@ -390,12 +390,12 @@ btn--full {
   }
   
   .plan--popular .card__header::before {
-    content: url(../images/popular.svg);
-    width: 40px;
+    content: url(../imgs/popular.svg);
+    width: 50px;
     display: inline-block;
     position: absolute;
-    top: -6px;
-    right: 5%;
+    top: -3px;
+    right: 6%;
   }
   
   @media screen and (min-width: 1024px) {
