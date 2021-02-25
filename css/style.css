@@ -640,8 +640,10 @@ btn--full {
 
 
 .collapsed__content{
-    /*pomocumaxheightdobijamooverflowsadrzajjevidljivbezobziraukojemjestanju*/max-height: 0;
-    /*kadajeucollapsstanjusadrzajjenevidljiv*/overflow: hidden;
+    /*pomocu maxheight dobijamo overflow sadrzaj je vidljivbezobziraukojemjestanju*/max-height: 0;
+    /*kadajeucollapsstanju
+    sadrzaj je nevidljiv*/
+    overflow: hidden;
     opacity: 0;
     transition:opacity, max-height ease-in-out .7s ;
     -webkit-transition:opacity, max-height ease-in-out .7s ;
@@ -665,4 +667,43 @@ btn--full {
      */
     max-height: 100vh;
     opacity: 1;
+}
+
+/* block skewed */
+
+.block {
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem;
+}
+
+.block__header {
+  text-align: center;
+}
+
+.block__heading {
+  margin-top: 0;
+}
+
+.block--dark {
+  background:linear-gradient(to top right, #12122c, #414345);
+  color: #7b858b;
+}
+
+.block--dark .block__heading {
+  color: #fff;
+}
+
+ .block--skewed-right {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+}
+
+/* .block--skewed-left {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+} */
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
 }
