@@ -205,6 +205,10 @@ a {
     width: 64px;
 }
 
+.icon--white {
+  fill: #fff;
+}
+
 
 /* buttons */
 
@@ -706,4 +710,69 @@ btn--full {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+/* navigation */
+
+.navigation {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0.7rem 1.2rem;
+  align-items: center;
+}
+
+.nav__list {
+  width: 100%;
+  margin: 0;
+}
+
+.nav__item {
+  padding: .5rem 2rem;
+  border-bottom: 1px solid slategray;
+}
+
+.nav__item > a {
+  color: #7b858b;
+  transition: color .3s ease-in;
+  -webkit-transition:;
+  -moz-transition:;
+  -ms-transition:;
+  -o-transition:;
+}
+
+.nav__item>a:hover {
+  color: var(--accent-color);
+}
+
+.menu__toggle {
+  cursor: pointer;
+  opacity: .6;
+}
+
+.collaps--expanded .menu__toggle {
+  fill: var(--accent-color);
+  opacity: 1; 
+}
+
+/* desktop nav */
+
+@media screen and (min-width: 770px) {
+  .menu__toggle {
+    display: none;
+  }
+
+  .nav__list {
+    display: flex;
+    width: auto;
+    font-size: 1.4rem;
+    /* postavljanje liste da bude uvek vidljiva */
+    max-height: 100%;
+    opacity: 1;
+  }
+
+  .nav__item {
+    border: none;
+  }
 }
