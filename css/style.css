@@ -108,15 +108,15 @@ a {
 /* badges  */
 
 .badge {
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-    -webkit-border-radius: 30px;
-    border-radius: 30px;
+    border-radius: 40px;
     font-size: 2rem;
     font-weight: bold;
     padding: 0.5rem 2rem;
     white-space: nowrap;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
 }
 
 .badge--primary {
@@ -125,7 +125,7 @@ a {
 }
 
 .badge--secondary {
-    background-color:var(--primary-color);
+    background-color:var(--secondary-color);
     color: cornsilk;
 }
 
@@ -242,6 +242,13 @@ a {
     color: cornsilk;
 }
 
+.btn .icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
 .btn--secondary {
     color: cornsilk;
     background-color:var(--secondary-color);
@@ -323,7 +330,7 @@ btn--full {
 ::placeholder {
     font-style: italic;
     font-size: 1.2rem;
-    color: #c4c4c4;
+    color: #acaaaa;
 }
 
 @media screen and (min-width:1024px) {
@@ -345,7 +352,7 @@ btn--full {
 .input-group .input {
     border: 0;
     flex-grow: 1;
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
 }
 
 .input-group .btn {
@@ -806,5 +813,31 @@ btn--full {
   .hero__content {
     text-align: left;
     align-self: center;
+  }
+}
+
+
+/* domain */ 
+
+.domain--block .input-group {
+  border: 0;
+  box-shadow: 0 0 40px 25px #d9dfd5;
+  margin: 4.5rem auto;
+  /* max-width: 670px; */
+}
+
+.price__domain {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  font-weight: bold;
+  justify-items: center;
+  /* max-width: 700px;
+  margin: 0 auto; */
+}
+
+@media screen and (min-width: 770px) {
+  .price__domain {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
