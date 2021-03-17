@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "krojacevaSkolaHTML",
+			"path": "..\\..\\krojacevaSkolaHTML"
+		},
+		{
+			"name": "moshHtml",
+			"path": "..\\..\\moshHtml"
+		},
+		{
+			"name": "project-zero",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "project-zero"
+	}
+}
