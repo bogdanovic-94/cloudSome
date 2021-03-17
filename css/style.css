@@ -535,6 +535,7 @@ btn--full {
 
   .testimonial__img {
       position: relative;
+      margin: 0 2rem;
   }
 
   .testimonial__img > .icon-container {
@@ -542,6 +543,7 @@ btn--full {
       top: 3rem;
       right: -32px;
   }
+
 
   .icon-container--accent {
       background-color: var(--accent-color);
@@ -566,7 +568,11 @@ btn--full {
 .callout {
     padding: 4rem;
     border-radius: 5px;
-  }
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+}
   
   .callout--primary {
     background: var(--primary-color);
@@ -670,6 +676,7 @@ btn--full {
 
 .block__header {
   text-align: center;
+  margin-bottom: 3.5rem;
 }
 
 .block__heading {
@@ -724,6 +731,10 @@ btn--full {
 .nav__item > a {
   color: #7b858b;
   transition: color .3s ease-in;
+  -webkit-transition: color .3s ease-in;
+  -moz-transition: color .3s ease-in;
+  -ms-transition: color .3s ease-in;
+  -o-transition: color .3s ease-in;
 }
 
 .nav__item>a:hover {
@@ -874,7 +885,7 @@ btn--full {
 /* features */
 
 .feature__heading {
-  color: var(--heading-color);
+  color:var(--heading-color);
   margin: 1rem 0;
 }
 
@@ -889,4 +900,24 @@ btn--full {
 
 .feature:first-of-type {
   margin-top: 4.5rem;
+}
+
+/* Showcase Block */
+.block-showcase__image > img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+
+  .block-showcase__image {
+    justify-self: end;
+  }
+
+  .block-showcase__image > img {
+    width: auto;
+    max-width: 700px;
+  }
 }
