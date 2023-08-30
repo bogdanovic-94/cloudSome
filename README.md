@@ -14,5 +14,5 @@ Concepts used in this project:
 - A touch of JS for interactivity
 
 ---
-Kind regards :) 
-@HerMilan94
+Kind regards, 
+Milan
